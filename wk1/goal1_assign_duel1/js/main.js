@@ -30,7 +30,7 @@
 	
 		console.log("in the fight function")
 		
-		alert(playerOneName + ":" + playerOneHealth + ":" + " *START* " + playerTwoName + ":" + playerTwoHealth + ":" + " *START* " );
+		alert(playerOneName + ":"+ " " + playerOneHealth + "%" + " " + " *START* " + " " + playerTwoName + ":" + " " + playerTwoHealth + "%" + " " + " *START* " );
 
 
 		//fight code begins here
