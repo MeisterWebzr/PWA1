@@ -11,8 +11,8 @@
 	console.log("FIGHT!!!");
 
 	//players name
-	var playerOneName = Meister
-	var playerTwoName = Webzr
+	var playerOneName = "Meister";
+	var playerTwoName = "Webzr";
 
 
 	//players damage
@@ -30,12 +30,9 @@
 		
 		console.log("in the fight function")
 		//code here
-		
-
-
-
 
 	};
+
 
 	function winnerCheck(){
 
@@ -45,7 +42,7 @@
 	};
 
 	//Program starts here
-	console.log('Program start here')
+	console.log("Program start here")
 	fight(); //this is where the program starts
 
 })();
