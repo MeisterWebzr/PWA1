@@ -27,9 +27,12 @@
 	var round = 1;
 
 	function fight(){
-		
+	
 		console.log("in the fight function")
 		
+		alert(playerOneName + ":" + playerOneHealth + ":" + " *START* " + playerTwoName + ":" + playerTwoHealth + ":" + " *START* " );
+
+
 		//fight code begins here
 		for (var i = 0; i < 10; i++) {
 			console.log(i);
