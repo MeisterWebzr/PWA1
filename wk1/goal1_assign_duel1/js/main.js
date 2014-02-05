@@ -40,6 +40,11 @@
 		//random number formula is Math.floor(Math.random() * (max-min) + min)
 		var minDamage1 = player1Damage * .5;
 		var minDamage2 = player2Damage * .5;
+		var f1 = Math.floor(Math.random() * (player1Damage-minDamage1) + minDamage1);
+		var f2 = Math.floor(Math.random() * (player2Damage-minDamage2) + minDamage2);
+
+		//console.log(f1);
+		//console.log(f2);
 
 
 		};
