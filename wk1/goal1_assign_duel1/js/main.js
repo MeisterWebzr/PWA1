@@ -24,13 +24,13 @@
 	var playerTwoHealth = 100;
 
 	//rounds
-	var round = 1;
+	var round = 0;
 
 	function fight(){
 	
 		console.log("in the fight function")
 		
-		alert(playerOneName + ":"+ " " + playerOneHealth + "%" + " " + " *START* " + " " + playerTwoName + ":" + " " + playerTwoHealth + "%" + " " + " *START* " );
+		alert(playerOneName + ":"+ " " + playerOneHealth + "%" + " " + " *START* " + " " + playerTwoName + ":" + " " + playerTwoHealth + "%" + " " + " *START* " + "   " + " LETS SEE WHICH WARRIOR WINS, FIGHT!!!");
 
 
 		//fight code begins here
@@ -56,7 +56,18 @@
 		var results = winnerCheck();
 		console.log(results);
 
+		if (results === "No winner") {
+			round ++;
+			alert(playerOneName + ":"+ " " + playerOneHealth + "%" + " " + "*ROUND" + round + " *OVER* " + playerTwoName + ":" + " " + playerTwoHealth + "%");
+		
+		}else{
+
+			alert(results);
+			break;
 		};
+
+
+	  };
 
 
 	};
