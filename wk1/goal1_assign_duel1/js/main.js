@@ -36,7 +36,14 @@
 		//fight code begins here
 		for (var i = 0; i < 10; i++) {
 			console.log(i);
+		
+		//random number formula is Math.floor(Math.random() * (max-min) + min)
+		var minDamage1 = player1Damage * .5;
+		var minDamage2 = player2Damage * .5;
+
+
 		};
+
 
 	};
 
