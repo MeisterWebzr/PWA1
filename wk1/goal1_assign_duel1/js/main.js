@@ -11,7 +11,7 @@
 	console.log("FIGHT!!!");
 
 	//players name
-	var playerOneName = "Meister";
+	var playerOneName = "Meister"; 
 	var playerTwoName = "Webzr";
 
 
@@ -29,13 +29,16 @@
 	function fight(){
 		
 		console.log("in the fight function")
-		//code here
+		
+		//fight code begins here
+		for (var i = 0; i < 10; i++) {
+			console.log(i);
+		};
 
 	};
 
 
 	function winnerCheck(){
-
 		//code here
 
 
