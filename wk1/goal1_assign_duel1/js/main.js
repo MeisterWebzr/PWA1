@@ -46,6 +46,15 @@
 		//console.log(f1);
 		//console.log(f2);
 
+		//inflicting damage
+		playerOneHealth -= f1;
+		playerTwoHealth -= f2;
+
+
+		console.log(playerOneName + ":"+ " " + playerOneHealth + "%" + " " + " " + playerTwoName + ":" + " " + playerTwoHealth + "%");
+
+		var results = winnerCheck();
+		console.log(results);
 
 		};
 
@@ -54,13 +63,31 @@
 
 
 	function winnerCheck(){
-		//code here
+		
+		console.log("In winner Check area of code")
 
+		//code here
+		var result = "No winner"; //determeining the var for no winner/ tie statement
+
+			if (playerOneHealth < 1 && playerTwoHealth < 1) { //checking for players health less than 1
+
+				result = "You Both Die"; //alert for tie
+
+			}else if (playerOneHealth < 1){ //checking if player1 health is less than 1 
+
+				result = playerTwoName + " WINS!!! ";
+			
+			}else if (playerTwoHealth < 1){
+
+				result = playerOneName + " WINS!!! ";
+		};
+
+		return result;
 
 	};
 
 	//Program starts here
-	console.log("Program start here")
+	console.log("Program start here");
 	fight(); //this is where the program starts
 
 })();
